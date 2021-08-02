@@ -78,6 +78,9 @@ const Home: React.FC<HomeProps> = (props) => {
 											/>
 										</td>
 										<td>
+											<div className='divider'></div>
+										</td>
+										<td>
 											<Weather
 												title={title}
 												tempUnit={tempUnit}

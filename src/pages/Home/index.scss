@@ -21,11 +21,9 @@
 			margin: 125px;
 		};
 		.divider {
-			width: 2px;
-			height: calc(100vw * 0.9 * 0.26);
-			max-height: 410px;
-			background-color: #d1d1d1;
-			content: "";
+			border-right: 2px solid #d1d1d1;
+			height: calc(100vw * 0.9 * 0.25);
+    		max-height: 400px;
 		}
 	}
 }
