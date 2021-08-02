@@ -75,6 +75,7 @@ const Home: React.FC<HomeProps> = (props) => {
 										setIsDisplayWind={setIsDisplayWind}
 									/>
 								</div>
+								<div className='divider' />
 								<div className='displayContainer'>
 									<Weather
 										title={title}

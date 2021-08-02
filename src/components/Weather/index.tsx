@@ -23,7 +23,7 @@ const Weather: React.FC<WeatherProps> = (props) => {
 			</div>
 			<div className='detailContainer'>
 				<div className='weatherIcon'>
-					<img src={`/images/weather/${currentWeather?.icon}.png`} alt={currentWeather?.main} className='icon' />
+					{currentWeather?.icon && <img src={`/images/${currentWeather?.icon}.png`} alt={currentWeather?.main} className='icon' />}
 				</div>
 				<div className='contentDetail'>
 					<p className='city'>

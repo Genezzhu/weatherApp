@@ -19,6 +19,7 @@ const UserEditor: React.FC<UserEditorProps> = (props) => {
 	return (
 		<div className='inputDetailContainer'>
 			<table className='detailTable'>
+				<tbody>
 				<tr>
 					<td>
 						Title
@@ -41,51 +42,52 @@ const UserEditor: React.FC<UserEditorProps> = (props) => {
 						Temperature
 					</td>
 				</tr>
-				<tr>
-					<td className='selection'>
-						<div className='tempUnit'>
-							<input
-								type='radio'
-								name='temperature'
-								value={TEMP_UNIT.METRIC}
-								onChange={e => setTempUnit(e.target.value)}
-								checked={tempUnit === TEMP_UNIT.METRIC} />°C
-						</div>
-						<div className='tempUnit'>
-							<input
-								type='radio'
-								name='temperature'
-								value={TEMP_UNIT.IMPERIAL}
-								onChange={e => setTempUnit(e.target.value)}
-								checked={tempUnit === TEMP_UNIT.IMPERIAL} />°F
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Wind
-					</td>
-				</tr>
-				<tr>
-					<td className='selection'>
-						<div className='isDisplayWind'>
-							<input
-								type='radio'
-								name='wind'
-								value='true'
-								onChange={e => setIsDisplayWind(true)}
-								checked={isDisplayWind === true} />On
-						</div>
-						<div className='isDisplayWind'>
-							<input
-								type='radio'
-								name='wind'
-								value='false'
-								onChange={e => setIsDisplayWind(false)}
-								checked={isDisplayWind === false} />Off
-						</div>
-					</td>
-				</tr>
+					<tr>
+						<td className='selection'>
+							<div className='tempUnit'>
+								<input
+									type='radio'
+									name='temperature'
+									value={TEMP_UNIT.METRIC}
+									onChange={e => setTempUnit(e.target.value)}
+									checked={tempUnit === TEMP_UNIT.METRIC} />°C
+							</div>
+							<div className='tempUnit'>
+								<input
+									type='radio'
+									name='temperature'
+									value={TEMP_UNIT.IMPERIAL}
+									onChange={e => setTempUnit(e.target.value)}
+									checked={tempUnit === TEMP_UNIT.IMPERIAL} />°F
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Wind
+						</td>
+					</tr>
+					<tr>
+						<td className='selection'>
+							<div className='isDisplayWind'>
+								<input
+									type='radio'
+									name='wind'
+									value='true'
+									onChange={e => setIsDisplayWind(true)}
+									checked={isDisplayWind === true} />On
+							</div>
+							<div className='isDisplayWind'>
+								<input
+									type='radio'
+									name='wind'
+									value='false'
+									onChange={e => setIsDisplayWind(false)}
+									checked={isDisplayWind === false} />Off
+							</div>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 		</div>
 	);

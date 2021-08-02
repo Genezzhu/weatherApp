@@ -7,7 +7,7 @@
     max-height: 440px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: #000;
-    margin-left: 20px;
+    margin-left: 40px;
     .title {
         font-size: 24px;
         font-weight: 800;
@@ -22,11 +22,15 @@
         flex-direction: row;
         padding: calc(100vw * 0.9 * 0.045) calc(100vw * 0.9 * 0.04);
         padding-top: 0;
+        @media (min-width: 1500px) {
+            padding: 70px 65px;
+        }
         .weatherIcon {
             flex: 1;
             padding-right: 5px;
             .icon {
-                max-width: calc(100vw * 0.9 * 0.13);;
+                width: calc(100vw * 0.9 * 0.13);
+                max-width: 175px;
             }
         }
         .contentDetail {

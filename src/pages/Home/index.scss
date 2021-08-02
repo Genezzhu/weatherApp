@@ -16,8 +16,16 @@
 	.contentContainer {
 		margin: calc(100vw * 0.9 * (125 / 1500));;
 		display: flex;
+		align-items: center;
 		@media (min-width: 1500px) {
 			margin: 125px;
 		};
+		.divider {
+			width: 2px;
+			height: calc(100vw * 0.9 * 0.26);
+			max-height: 410px;
+			background-color: #d1d1d1;
+			content: "";
+		}
 	}
 }

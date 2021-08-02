@@ -2,7 +2,6 @@
   "name": "weatherapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://genezzhu.github.io/weatherApp/",
   "dependencies": {
     "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",

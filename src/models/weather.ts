@@ -20,7 +20,6 @@ const weather = {
 		},
 		*fetchCurrentLocationWeather({ payload }, { call, put }) {
 			const response = yield call(getCurrentLocationWeather, payload);
-			console.log(response);
 			const responsePayload: IWeatherBase = {
 				cityName: response?.data?.name,
 				temp: response?.data?.main?.temp,
