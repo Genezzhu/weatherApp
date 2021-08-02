@@ -64,26 +64,45 @@ const Home: React.FC<HomeProps> = (props) => {
 					(getLocationLoading || fetchWeatherLoading)
 						? (<Spinner loading={getLocationLoading || fetchWeatherLoading} />)
 						: (
-							<>
-								<div className='inputContainer'>
-									<UserEditor
-										title={title}
-										setTitle={setTitle}
-										tempUnit={tempUnit}
-										setTempUnit={setTempUnit}
-										isDisplayWind={isDisplayWind}
-										setIsDisplayWind={setIsDisplayWind}
-									/>
-								</div>
-								<div className='divider' />
-								<div className='displayContainer'>
-									<Weather
-										title={title}
-										tempUnit={tempUnit}
-										isDisplayWind={isDisplayWind}
-									/>
-								</div>
-							</>
+							<table>
+								<tbody>
+									<tr>
+										<td>
+											<UserEditor
+												title={title}
+												setTitle={setTitle}
+												tempUnit={tempUnit}
+												setTempUnit={setTempUnit}
+												isDisplayWind={isDisplayWind}
+												setIsDisplayWind={setIsDisplayWind}
+											/>
+										</td>
+										<td>
+											<Weather
+												title={title}
+												tempUnit={tempUnit}
+												isDisplayWind={isDisplayWind}
+											/>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							// <>
+							// 	<UserEditor
+							// 		title={title}
+							// 		setTitle={setTitle}
+							// 		tempUnit={tempUnit}
+							// 		setTempUnit={setTempUnit}
+							// 		isDisplayWind={isDisplayWind}
+							// 		setIsDisplayWind={setIsDisplayWind}
+							// 	/>
+							// 	<div className='divider' />
+							// 	<Weather
+							// 		title={title}
+							// 		tempUnit={tempUnit}
+							// 		isDisplayWind={isDisplayWind}
+							// 	/>
+							// </>
 						)
 				}
 				

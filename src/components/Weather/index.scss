@@ -16,6 +16,9 @@
         overflow: hidden;
         white-space: nowrap;
         text-align: left;
+        @media (min-width: 1500px) {
+            padding: 65px 70px;
+        }
     }
     .detailContainer {
         display: flex;
