@@ -1,0 +1,46 @@
+.inputDetailContainer {
+    width: calc(100vw * 0.9 * 0.38);
+    height: calc(100vw * 0.9 * 0.29);
+    margin-right: 20px;
+    .detailTable {
+        text-align: left;
+        font-weight: 400;
+        font-size: 22px;
+        padding: 60px;
+        padding-top: 0;
+        border-spacing: 1em;
+        position: relative;
+        td {
+            height: 35px;
+            margin-bottom: 20px;
+        }
+        .textInput {
+            width: 430px;
+            height: 40px;
+            font-size: 22px;
+            padding: 1px 15px;
+        }
+        .selection {
+            display: flex;
+            input[type="radio" i] {
+                transform: scale(1.5);
+                margin-right: 20px;
+            }
+            .tempUnit,
+            .isDisplayWind {
+                flex: 1;
+            }
+        }
+    }
+    .detailTable::after {
+        position: absolute;
+        top: 18px;
+        right: 35px;
+        display: block;
+        width: 2px;
+        height: calc(100vw * 0.9 * 0.26);
+        line-height: 56px;
+        background-color: #d1d1d1;
+        content: '';
+    }
+}
