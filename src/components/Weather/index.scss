@@ -16,6 +16,7 @@
         overflow: hidden;
         white-space: nowrap;
         text-align: left;
+	    text-overflow: ellipsis;
         @media (min-width: 1500px) {
             padding: 65px 70px;
         }
